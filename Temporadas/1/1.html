@@ -17,7 +17,6 @@
 <nav><a class="btn" href="../../index.html">&larr; Todas las temporadas</a></nav>
 </header>
 <div class="ep-list" id="eps"><p>Cargando cap&iacute;tulos&hellip;</p></div>
-<div class="note-card">Si un cap&iacute;tulo todav&iacute;a no tiene video, es porque no tiene c&oacute;digo Byse en <code>data.json</code>. Cuando lo subas a Byse, pon&eacute; el c&oacute;digo en el campo <code>"byse"</code> y aparece el reproductor solo.</div>
 <script>
 fetch('data.json').then(r => r.json()).then(d => {
   const box = document.getElementById('eps');
@@ -29,7 +28,7 @@ fetch('data.json').then(r => r.json()).then(d => {
       + '<span class="tag' + (has ? '' : ' off') + '">' + (has ? 'Ver' : 'Sin video') + '</span></a>';
   }).join('');
 }).catch(() => {
-  document.getElementById('eps').innerHTML = '<p>No se pudo cargar data.json.</p>';
+  document.getElementById('eps').innerHTML = '<p>No se pudieron cargar los cap&iacute;tulos.</p>';
 });
 </script>
 

@@ -24,12 +24,10 @@ fetch('pelicula.json').then(r => r.json()).then(d => {
     box.innerHTML = '<iframe src="https://bysesayeveum.com/e/' + encodeURIComponent(d.byse.trim())
       + '" allowfullscreen allow="autoplay; fullscreen"></iframe>';
   } else {
-    box.innerHTML = '<div class="empty"><b>La pel&iacute;cula todav&iacute;a no tiene video.</b>'
-      + '<p>Subila a Byse y pon&eacute; el c&oacute;digo en <code>pelicula.json</code>, campo <code>"byse"</code>.</p>'
-      + '<p>Ejemplo: <code>"byse": "abc123def456"</code></p></div>';
+    box.innerHTML = '<div class="empty"><b>La pel&iacute;cula todav&iacute;a no tiene video.</b></div>';
   }
 }).catch(() => {
-  document.getElementById('player').innerHTML = '<div class="empty"><b>No se pudo cargar pelicula.json.</b></div>';
+  document.getElementById('player').innerHTML = '<div class="empty"><b>La pel&iacute;cula todav&iacute;a no tiene video.</b></div>';
 });
 </script>
 

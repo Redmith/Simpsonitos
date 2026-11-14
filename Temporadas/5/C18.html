@@ -22,7 +22,7 @@
 fetch('data.json').then(r => r.json()).then(d => {
   const ep = d.episodes.find(x => String(x.enumber) === "18");
   const box = document.getElementById('player');
-  if (!ep) { box.innerHTML = '<div class="empty"><b>Cap&iacute;tulo no encontrado en data.json.</b></div>'; return; }
+  if (!ep) { box.innerHTML = '<div class="empty"><b>Este cap&iacute;tulo todav&iacute;a no tiene video.</b></div>'; return; }
   document.getElementById('ename').textContent = ep.ename;
   document.getElementById('edate').textContent = ep.edate;
   document.title = 'Simpsonitos • T' + d.season + 'E' + ep.enumber + ' • ' + ep.ename;
@@ -30,12 +30,10 @@ fetch('data.json').then(r => r.json()).then(d => {
     box.innerHTML = '<iframe src="https://bysesayeveum.com/e/' + encodeURIComponent(ep.byse.trim())
       + '" allowfullscreen allow="autoplay; fullscreen"></iframe>';
   } else {
-    box.innerHTML = '<div class="empty"><b>Este cap&iacute;tulo todav&iacute;a no tiene video.</b>'
-      + '<p>Subilo a Byse y pon&eacute; el c&oacute;digo del archivo en <code>Temporadas/5/data.json</code>, campo <code>"byse"</code> del cap&iacute;tulo 18.</p>'
-      + '<p>Ejemplo: <code>"byse": "abc123def456"</code></p></div>';
+    box.innerHTML = '<div class="empty"><b>Este cap&iacute;tulo todav&iacute;a no tiene video.</b></div>';
   }
 }).catch(() => {
-  document.getElementById('player').innerHTML = '<div class="empty"><b>No se pudo cargar data.json.</b></div>';
+  document.getElementById('player').innerHTML = '<div class="empty"><b>Este cap&iacute;tulo todav&iacute;a no tiene video.</b></div>';
 });
 </script>
 
