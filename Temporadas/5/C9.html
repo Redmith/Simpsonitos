@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simpsonitos • T5E9 • La última tentación de Homero</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/simpsonitos.css">
+</head>
+<body>
+<div class="clouds"><div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div></div>
+<div class="wrap">
+
+<header class="hero small">
+<h1 class="logo" style="font-size:clamp(1.6rem,6vw,2.6rem)" id="ename">La última tentación de Homero</h1>
+<p class="subtitle">Temporada 5 &middot; Cap&iacute;tulo 9 &middot; <span id="edate">09-12-1993</span></p>
+<nav><a class="btn" href="5.html">&larr; Temporada 5</a><a class="btn" href="../../index.html">Inicio</a></nav>
+</header>
+<div class="player" id="player"><p>Cargando reproductor&hellip;</p></div>
+<div class="pager"><a class="btn" href="C8.html">&larr; Cap. 8</a><a class="btn" href="5.html">Temporada 5</a><a class="btn" href="C10.html">Cap. 10 &rarr;</a></div>
+<script>
+fetch('data.json').then(r => r.json()).then(d => {
+  const ep = d.episodes.find(x => String(x.enumber) === "9");
+  const box = document.getElementById('player');
+  if (!ep) { box.innerHTML = '<div class="empty"><b>Cap&iacute;tulo no encontrado en data.json.</b></div>'; return; }
+  document.getElementById('ename').textContent = ep.ename;
+  document.getElementById('edate').textContent = ep.edate;
+  document.title = 'Simpsonitos • T' + d.season + 'E' + ep.enumber + ' • ' + ep.ename;
+  if (ep.byse && ep.byse.trim() !== '') {
+    box.innerHTML = '<iframe src="https://bysesayeveum.com/e/' + encodeURIComponent(ep.byse.trim())
+      + '" allowfullscreen allow="autoplay; fullscreen"></iframe>';
+  } else {
+    box.innerHTML = '<div class="empty"><b>Este cap&iacute;tulo todav&iacute;a no tiene video.</b>'
+      + '<p>Subilo a Byse y pon&eacute; el c&oacute;digo del archivo en <code>Temporadas/5/data.json</code>, campo <code>"byse"</code> del cap&iacute;tulo 9.</p>'
+      + '<p>Ejemplo: <code>"byse": "abc123def456"</code></p></div>';
+  }
+}).catch(() => {
+  document.getElementById('player').innerHTML = '<div class="empty"><b>No se pudo cargar data.json.</b></div>';
+});
+</script>
+
+<footer>simpsonitos &middot; sitio de fans, sin videos alojados</footer>
+<div class="grass"></div>
+</div>
+</body>
+</html>

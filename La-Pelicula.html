@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simpsonitos • La película</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/simpsonitos.css">
+</head>
+<body>
+<div class="clouds"><div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div></div>
+<div class="wrap">
+
+<header class="hero small">
+<h1 class="logo" style="font-size:clamp(1.8rem,7vw,3rem)">La pel&iacute;cula</h1>
+<p class="subtitle">Los Simpson: la pel&iacute;cula &middot; 26-7-2007</p>
+<nav><a class="btn" href="index.html">&larr; Volver</a></nav>
+</header>
+<div class="player" id="player"><p>Cargando reproductor&hellip;</p></div>
+<script>
+fetch('pelicula.json').then(r => r.json()).then(d => {
+  const box = document.getElementById('player');
+  if (d.byse && d.byse.trim() !== '') {
+    box.innerHTML = '<iframe src="https://bysesayeveum.com/e/' + encodeURIComponent(d.byse.trim())
+      + '" allowfullscreen allow="autoplay; fullscreen"></iframe>';
+  } else {
+    box.innerHTML = '<div class="empty"><b>La pel&iacute;cula todav&iacute;a no tiene video.</b>'
+      + '<p>Subila a Byse y pon&eacute; el c&oacute;digo en <code>pelicula.json</code>, campo <code>"byse"</code>.</p>'
+      + '<p>Ejemplo: <code>"byse": "abc123def456"</code></p></div>';
+  }
+}).catch(() => {
+  document.getElementById('player').innerHTML = '<div class="empty"><b>No se pudo cargar pelicula.json.</b></div>';
+});
+</script>
+
+<footer>simpsonitos &middot; sitio de fans, sin videos alojados</footer>
+<div class="grass"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+/* Simpsonitos: extras sobre assets/style.css (que no se toca) */
+.seasons{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1rem;margin-top:1.4rem}
+.season-card{background:#fff;border:3px solid var(--ink);border-radius:20px;box-shadow:6px 6px 0 var(--ink);overflow:hidden;text-decoration:none;color:var(--ink);display:block}
+.season-card:hover{transform:translateY(-3px) rotate(-.4deg)}
+.season-card img{width:100%;height:220px;object-fit:cover;display:block;border-bottom:3px solid var(--ink)}
+.season-card .t{padding:.7rem .8rem;font-weight:800;text-align:center}
+.season-card .y{display:block;font-size:.8rem;color:#666;font-weight:700}
+.season-card.soon{opacity:.6}
+.season-card.soon .t{color:#888}
+.ep-list{display:flex;flex-direction:column;gap:.7rem;margin-top:1.2rem}
+.ep-row{display:flex;gap:.9rem;align-items:center;background:#fff;border:3px solid var(--ink);border-radius:16px;box-shadow:4px 4px 0 var(--ink);padding:.6rem;text-decoration:none;color:var(--ink)}
+.ep-row img{width:52px;height:76px;object-fit:cover;border-radius:10px;border:2px solid var(--ink);flex:none}
+.ep-row b{display:block;line-height:1.25}
+.ep-row span{font-size:.85rem;color:#666;font-weight:700}
+.ep-row .tag{margin-left:auto;flex:none;font-weight:800;font-size:.8rem;background:var(--yellow);border:2px solid var(--ink);border-radius:999px;padding:.25rem .7rem}
+.ep-row .tag.off{background:#eee;color:#888}
+.player{margin-top:1.2rem;background:#fff;border:3px solid var(--ink);border-radius:20px;box-shadow:6px 6px 0 var(--ink);padding:1rem}
+.player iframe{width:100%;height:460px;border:0;border-radius:12px;display:block}
+.player .empty{background:#fffdf5;border:3px dashed var(--pink-dark);border-radius:14px;padding:1.2rem;text-align:center}
+.player .empty code{background:#f0ead0;padding:.1rem .35rem;border-radius:6px}
+.pager{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.2rem}
+.note-card{background:#fffdf5;border:3px dashed var(--ink);border-radius:16px;padding:1rem;margin-top:1.2rem}
