@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simpsonitos • T16E1 • Especial de noche de brujas XV</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/simpsonitos.css">
+</head>
+<body>
+<div class="clouds"><div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div></div>
+<div class="wrap">
+
+<header class="hero small">
+<h1 class="logo" style="font-size:clamp(1.6rem,6vw,2.6rem)" id="ename">Especial de noche de brujas XV</h1>
+<p class="subtitle">Temporada 16 &middot; Cap&iacute;tulo 1 &middot; <span id="edate">07-11-2004</span></p>
+<nav><a class="btn" href="16.html">&larr; Temporada 16</a><a class="btn" href="../../index.html">Inicio</a></nav>
+</header>
+<div class="player" id="player"><p>Cargando reproductor&hellip;</p></div>
+<div class="pager"><a class="btn" href="16.html">Temporada 16</a><a class="btn" href="C2.html">Cap. 2 &rarr;</a></div>
+<script>
+fetch('data.json').then(r => r.json()).then(d => {
+  const ep = d.episodes.find(x => String(x.enumber) === "1");
+  const box = document.getElementById('player');
+  if (!ep) { box.innerHTML = '<div class="empty"><b>Este cap&iacute;tulo todav&iacute;a no tiene video.</b></div>'; return; }
+  document.getElementById('ename').textContent = ep.ename;
+  document.getElementById('edate').textContent = ep.edate;
+  document.title = 'Simpsonitos \u2022 T' + d.season + 'E' + ep.enumber + ' \u2022 ' + ep.ename;
+  if (ep.byse && ep.byse.trim() !== '') {
+    box.innerHTML = '<iframe src="https://bysesayeveum.com/e/' + encodeURIComponent(ep.byse.trim())
+      + '" allowfullscreen allow="autoplay; fullscreen"></iframe>';
+  } else {
+    box.innerHTML = '<div class="empty"><b>Este cap&iacute;tulo todav&iacute;a no tiene video.</b></div>';
+  }
+}).catch(() => {
+  document.getElementById('player').innerHTML = '<div class="empty"><b>Este cap&iacute;tulo todav&iacute;a no tiene video.</b></div>';
+});
+</script>
+
+<div class="grass"></div>
+</div>
+</body>
+</html>

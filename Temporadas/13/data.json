@@ -1,0 +1,160 @@
+{
+ "season": 13,
+ "year": 2001,
+ "episodes": [
+  {
+   "enumber": "1",
+   "ename": "Especial de noche de brujas XII",
+   "edate": "06-11-2001",
+   "img": "https://static.tvmaze.com/uploads/images/medium_landscape/69/173062.jpg",
+   "byse": "r869frawkzen"
+  },
+  {
+   "enumber": "2",
+   "ename": "Padres e hijos",
+   "edate": "11-11-2001",
+   "img": "https://static.tvmaze.com/uploads/images/medium_landscape/46/116561.jpg",
+   "byse": "d1zxhyzk3rc2"
+  },
+  {
+   "enumber": "3",
+   "ename": "Homero el Moe",
+   "edate": "18-11-2001",
+   "img": "https://static.tvmaze.com/uploads/images/medium_landscape/49/124702.jpg",
+   "byse": ""
+  },
+  {
+   "enumber": "4",
+   "ename": "El Sr. Burns se enamora",
+   "edate": "02-12-2001",
+   "img": "https://static.tvmaze.com/uploads/images/medium_landscape/40/102300.jpg",
+   "byse": "fvlupyy111jf"
+  },
+  {
+   "enumber": "5",
+   "ename": "Recuerdos de infancia",
+   "edate": "09-12-2001",
+   "img": "https://static.tvmaze.com/uploads/images/medium_landscape/44/110860.jpg",
+   "byse": "dvouxxww7n2x"
+  },
+  {
+   "enumber": "6",
+   "ename": "Lisa de poca fe",
+   "edate": "16-12-2001",
+   "img": "https://static.tvmaze.com/uploads/images/medium_landscape/69/173060.jpg",
+   "byse": "uaie2ywio677"
+  },
+  {
+   "enumber": "7",
+   "ename": "Conflictos familiares",
+   "edate": "06-01-2002",
+   "img": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126058.jpg",
+   "byse": "v26neldo8fc7"
+  },
+  {
+   "enumber": "8",
+   "ename": "La agridulce Marge",
+   "edate": "20-01-2002",
+   "img": "https://static.tvmaze.com/uploads/images/medium_landscape/69/173058.jpg",
+   "byse": "s1cpmmriqkar"
+  },
+  {
+   "enumber": "9",
+   "ename": "Mandíbula bien cerrada",
+   "edate": "27-01-2002",
+   "img": "https://static.tvmaze.com/uploads/images/medium_landscape/45/113215.jpg",
+   "byse": "84w57z9pkrt4"
+  },
+  {
+   "enumber": "10",
+   "ename": "Una proposición un poco indecorosa",
+   "edate": "10-02-2002",
+   "img": "https://static.tvmaze.com/uploads/images/medium_landscape/69/173046.jpg",
+   "byse": "vus7n4gkd7jh"
+  },
+  {
+   "enumber": "11",
+   "ename": "Bart se enamora",
+   "edate": "17-02-2002",
+   "img": "https://static.tvmaze.com/uploads/images/medium_landscape/43/107771.jpg",
+   "byse": "3t7g6akzo4ew"
+  },
+  {
+   "enumber": "12",
+   "ename": "El último vaquero del oeste",
+   "edate": "24-02-2002",
+   "img": "https://static.tvmaze.com/uploads/images/medium_landscape/68/172032.jpg",
+   "byse": "nmasaxg3hom8"
+  },
+  {
+   "enumber": "13",
+   "ename": "El viejo y la llave",
+   "edate": "10-03-2002",
+   "img": "https://static.tvmaze.com/uploads/images/medium_landscape/69/173045.jpg",
+   "byse": ""
+  },
+  {
+   "enumber": "14",
+   "ename": "Cuentos del dominio público",
+   "edate": "17-03-2002",
+   "img": "https://static.tvmaze.com/uploads/images/medium_landscape/68/172084.jpg",
+   "byse": "e52nkiox791y"
+  },
+  {
+   "enumber": "15",
+   "ename": "La culpa es de Lisa",
+   "edate": "31-03-2002",
+   "img": "https://static.tvmaze.com/uploads/images/medium_landscape/43/107880.jpg",
+   "byse": "a6795w0pueb7"
+  },
+  {
+   "enumber": "16",
+   "ename": "Un fin de semana con Burns",
+   "edate": "07-04-2002",
+   "img": "https://static.tvmaze.com/uploads/images/medium_landscape/68/172374.jpg",
+   "byse": "fgtwvngnl6ad"
+  },
+  {
+   "enumber": "17",
+   "ename": "Homenaje a Homero",
+   "edate": "21-04-2002",
+   "img": "https://static.tvmaze.com/uploads/images/medium_landscape/69/173044.jpg",
+   "byse": "i2scr9q7mz7c"
+  },
+  {
+   "enumber": "18",
+   "ename": "Papá rabioso",
+   "edate": "28-04-2002",
+   "img": "https://static.tvmaze.com/uploads/images/medium_landscape/69/173043.jpg",
+   "byse": "colbti1iwlt9"
+  },
+  {
+   "enumber": "19",
+   "ename": "El dulce Apu",
+   "edate": "05-05-2002",
+   "img": "https://static.tvmaze.com/uploads/images/medium_landscape/43/108320.jpg",
+   "byse": "f05xafbqfvvy"
+  },
+  {
+   "enumber": "20",
+   "ename": "La pequeña niña y los diez grandes",
+   "edate": "12-05-2002",
+   "img": "https://static.tvmaze.com/uploads/images/medium_landscape/43/108385.jpg",
+   "byse": "rnqthgxp8f7w"
+  },
+  {
+   "enumber": "21",
+   "ename": "El juego de la muerte",
+   "edate": "19-05-2002",
+   "img": "https://static.tvmaze.com/uploads/images/medium_landscape/69/173042.jpg",
+   "byse": "2duey7lyiy37"
+  },
+  {
+   "enumber": "22",
+   "ename": "Papá tiene una placa nueva",
+   "edate": "22-05-2002",
+   "img": "https://static.tvmaze.com/uploads/images/medium_landscape/69/173041.jpg",
+   "byse": "55c1vcua05dh"
+  }
+ ]
+}

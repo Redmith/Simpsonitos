@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simpsonitos • Temporada 16</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/simpsonitos.css">
+</head>
+<body>
+<div class="clouds"><div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div></div>
+<div class="wrap">
+
+<header class="hero small">
+<h1 class="logo" style="font-size:clamp(2rem,7vw,3.2rem)">Temporada 16</h1>
+<p class="subtitle">2004 &middot; 21 cap&iacute;tulos</p>
+<nav><a class="btn" href="../../index.html">&larr; Todas las temporadas</a></nav>
+</header>
+<div class="ep-list" id="eps"><p>Cargando cap&iacute;tulos&hellip;</p></div>
+<script>
+fetch('data.json').then(r => r.json()).then(d => {
+  const box = document.getElementById('eps');
+  box.innerHTML = d.episodes.map(e => {
+    const has = e.byse && e.byse.trim() !== '';
+    return '<a class="ep-row" href="C' + e.enumber + '.html">'
+      + '<img src="' + e.img + '" alt="" loading="lazy">'
+      + '<span><b>' + e.enumber + '. ' + e.ename + '</b><span>' + e.edate + '</span></span>'
+      + '<span class="tag' + (has ? '' : ' off') + '">' + (has ? 'Ver' : 'Sin video') + '</span></a>';
+  }).join('');
+}).catch(() => {
+  document.getElementById('eps').innerHTML = '<p>No se pudieron cargar los cap&iacute;tulos.</p>';
+});
+</script>
+
+<div class="grass"></div>
+</div>
+</body>
+</html>
